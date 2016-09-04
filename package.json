@@ -2,12 +2,17 @@
   "name": "timestamp",
   "version": "1.0.0",
   "description": "timestamp api",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+   "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brookesargent/fcc-timestamp.git"
+  },
   "author": "",
   "license": "ISC",
+  "homepage": "https://github.com/brookesargent/fcc-timestamp#readme",
   "dependencies": {
     "express": "^4.14.0"
   }

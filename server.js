@@ -3,8 +3,13 @@ var express = require('express');
 var app = express();
 var port = process.env.PORT || 8080;
 var moment = require('moment');
+var path = require('path');
 
 // routes will go here
+app.get('/', function(req, res) {
+    res.sendFile(path.join(__dirname + '/index.html'));
+});
+
 app.get('/:timestamp', function(req, res) {
   var date = req.params.timestamp;
   var naturalDate;
